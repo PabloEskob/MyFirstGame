@@ -675,6 +675,8 @@ MonoBehaviour:
   _cellSize: 1
   _originPosition: {fileID: 529350932}
   _tilePrefab: {fileID: 2022146494582249340, guid: 3ed698de0927f784fb13179f49603845, type: 3}
+  _list: []
+  _building: {fileID: 218197627}
 --- !u!114 &218197627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1565,6 +1567,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _defender: {fileID: 11400000, guid: 57b77b5b7fd78c243bf69d51b66ae649, type: 2}
+  _buttonTextName: {fileID: 1262426441}
+  _buttonTextPrice: {fileID: 14429212}
 --- !u!1 &893062514
 GameObject:
   m_ObjectHideFlags: 0
@@ -2218,6 +2222,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _defender: {fileID: 11400000, guid: 7f2eaf9cdf79ca84a8c10ecd3b1aef65, type: 2}
+  _buttonTextName: {fileID: 586658815}
+  _buttonTextPrice: {fileID: 2121738491}
 --- !u!114 &1337087917
 MonoBehaviour:
   m_ObjectHideFlags: 0

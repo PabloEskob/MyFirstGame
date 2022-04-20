@@ -6,7 +6,7 @@ public class Building : MonoBehaviour
     [SerializeField] private Camera _camera;
     [SerializeField] private Money _money;
 
-    private GameObject _defender;
+    private Unit _defender;
     private int _defenderPrice;
 
     private void Update()
@@ -22,11 +22,11 @@ public class Building : MonoBehaviour
 
             if (_defender != null)
             {
-                Destroy(_defender);
+                Destroy(_defender.gameObject);
             }
 
-            _defender= Instantiate(defenderPrefab.Prefab);
-            RegulateVisibility(false);
+            _defender = Instantiate(defenderPrefab.UnitPref);
+            _defender.RegulateVisibility(false);
         }
     }
 
@@ -34,10 +34,10 @@ public class Building : MonoBehaviour
     {
         if (_defender != null && tile.IsBuilt)
         {
-            RegulateVisibility(true);
-            Instantiate(_defender, tile.transform.position, quaternion.identity);
+            var newDefender = Instantiate(_defender, tile.transform.position, quaternion.identity);
+            newDefender.RegulateVisibility(true);
             _money.BuyDefender(_defenderPrice);
-            Destroy(_defender);
+            Destroy(_defender.gameObject);
             return true;
         }
 
@@ -59,11 +59,5 @@ public class Building : MonoBehaviour
         {
             Destroy(_defender);
         }
-    }
-
-    private void RegulateVisibility(bool result)
-    {
-        _defender.GetComponent<Shoot>().enabled = result;
-        _defender.GetComponent<BoxCollider2D>().enabled = result;
     }
 }

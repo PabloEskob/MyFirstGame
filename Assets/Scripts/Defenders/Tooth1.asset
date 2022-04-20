@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e1b58e7ed5db34498935362c5a7188d, type: 3}
   m_Name: Tooth1
   m_EditorClassIdentifier: 
-  _prefab: {fileID: 1774582817352272, guid: 103d8705ca4c7474e8b5593d8edcdfbc, type: 3}
   _maxHealth: 2
   _price: 1
   _name: "\u041A\u0430\u0440\u0438\u0435\u0441"
   _icon: {fileID: 21300000, guid: 7e86dfc68a792ee4bb84defcee86ebeb, type: 3}
+  _unitPref: {fileID: 5370908962960058853, guid: 103d8705ca4c7474e8b5593d8edcdfbc, type: 3}

@@ -1,18 +1,20 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(Button))]
 public class ButtonPress : MonoBehaviour
 {
     [SerializeField] private Defender _defender;
+    [SerializeField] private Text _buttonTextName;
+    [SerializeField] private Text _buttonTextPrice;
 
     private Button _button;
 
     private void Start()
     {
         _button = GetComponent<Button>();
-        var buttonTexts = _button.GetComponentsInChildren<Text>();
-        buttonTexts[0].text = _defender.Name;
-        buttonTexts[1].text = "Цена: " + _defender.Price;
+        _buttonTextName.text = _defender.Name;
+        _buttonTextPrice.text = "Цена: " + _defender.Price;
         _button.image.sprite = _defender.Icon;
     }
 }

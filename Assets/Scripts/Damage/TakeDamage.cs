@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-[RequireComponent(typeof(TakeDamage))]
+[RequireComponent(typeof(SpriteRenderer))]
 public abstract class TakeDamage : MonoBehaviour
 {
     [SerializeField] private Character _character;
@@ -21,7 +21,7 @@ public abstract class TakeDamage : MonoBehaviour
     public void ApplyDamage(int damage)
     {
         _currentHealth = Mathf.Clamp(_currentHealth - damage, _character.MinHealth, _character.MaxHealth);
-        
+
         StartCoroutine(ChangeColor(0.3f));
 
         if (_currentHealth == _character.MinHealth)
@@ -35,7 +35,7 @@ public abstract class TakeDamage : MonoBehaviour
         var waitForSecond = new WaitForSeconds(duration);
         _spriteRenderer.color = _damageReceivedColor;
         yield return waitForSecond;
-        
+
         _spriteRenderer.color = _intialColor;
     }
 }

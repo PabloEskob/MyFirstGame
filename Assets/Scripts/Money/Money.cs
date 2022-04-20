@@ -20,15 +20,15 @@ public class Money : MonoBehaviour
         _text.text = _numberCoins.ToString();
     }
 
-    private void TakeCoin()
-    {
-        _numberCoins++;
-        _text.text = _numberCoins.ToString();
-    }
-
     public void BuyDefender(int defenderPrice)
     {
         _numberCoins -= defenderPrice;
+        _text.text = _numberCoins.ToString();
+    }
+
+    private void TakeCoin()
+    {
+        _numberCoins++;
         _text.text = _numberCoins.ToString();
     }
 }

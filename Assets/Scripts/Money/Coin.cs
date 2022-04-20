@@ -1,13 +1,17 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Coin : MonoBehaviour
 {
     [SerializeField] private int _pointOfDeath;
     [SerializeField] private float _speed;
 
+
     private bool _activeSelf = true;
 
     public bool ActiveSelf => _activeSelf;
+
+    public event UnityAction CoinAmountChanged;
 
     private void Update()
     {
@@ -21,7 +25,7 @@ public class Coin : MonoBehaviour
 
     private void OnMouseDown()
     {
-        GlobalEvent.SendCoin();
+        CoinAmountChanged?.Invoke();
         Die();
     }
 

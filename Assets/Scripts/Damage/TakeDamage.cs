@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
+[RequireComponent(typeof(TakeDamage))]
 public abstract class TakeDamage : MonoBehaviour
 {
     [SerializeField] private Character _character;

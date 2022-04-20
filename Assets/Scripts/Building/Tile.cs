@@ -15,7 +15,7 @@ public class Tile : MonoBehaviour
 
     private void Start()
     {
-        // не могу понять ,как сделать поиск без тэга
+        // не могу понять ,как передать префабу building,через инспектор не работает 
         _building = GameObject.FindWithTag("Background").GetComponent<Building>();
         _renderer = GetComponent<SpriteRenderer>();
     }

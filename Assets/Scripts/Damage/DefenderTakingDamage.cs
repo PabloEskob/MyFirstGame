@@ -1,3 +1,3 @@
-public class DefenderTakingDamage : TakeDamage
+public class DefenderTakingDamage : Health
 {
 }

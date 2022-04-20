@@ -99,6 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _pointOfDeath: -4
   _speed: 2
+  _value: 1
 --- !u!58 &1603104466951644937
 CircleCollider2D:
   m_ObjectHideFlags: 0

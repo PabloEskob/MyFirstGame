@@ -947,6 +947,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d6cbd39e05d4914d9e1b9efd30631dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _coin: {fileID: -6129474299151567420, guid: ea04b3a19de6a2f4c9d37a3bbd1bf81c, type: 3}
 --- !u!1 &435775091
 GameObject:
   m_ObjectHideFlags: 0
@@ -2166,7 +2167,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1337087914
 GameObject:
@@ -2855,7 +2856,7 @@ Transform:
   - {fileID: 1437758554}
   - {fileID: 1924968276}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1788026116
 MonoBehaviour:
@@ -2871,7 +2872,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _container: {fileID: 1924968277}
   _capacity: 2
-  coinPrefab: {fileID: -6129474299151567420, guid: ea04b3a19de6a2f4c9d37a3bbd1bf81c, type: 3}
+  _coinPrefab: {fileID: -6129474299151567420, guid: ea04b3a19de6a2f4c9d37a3bbd1bf81c, type: 3}
   _secondsBetweenSpawn: 7
   _spawnPoint: {fileID: 1437758554}
   _scattering: 6

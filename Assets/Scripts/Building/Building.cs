@@ -25,7 +25,7 @@ public class Building : MonoBehaviour
                 Destroy(_defender);
             }
 
-            _defender = Instantiate(defenderPrefab.Prefab);
+            _defender= Instantiate(defenderPrefab.Prefab);
             RegulateVisibility(false);
         }
     }

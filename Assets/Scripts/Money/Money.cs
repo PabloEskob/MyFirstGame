@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 
+[RequireComponent(typeof(TMP_Text))]
 public class Money : MonoBehaviour
 {
     private int _numberCoins = 20;
